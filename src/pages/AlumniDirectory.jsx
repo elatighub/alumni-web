@@ -1,20 +1,27 @@
 import React, { useState } from 'react';
 import alumniData from '../data/alumniData';
+
 const AlumniDirectory = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [graduationYear, setGraduationYear] = useState('');
   const [location, setLocation] = useState('');
   const [profession, setProfession] = useState('');
+  const [specialty, setSpecialty] = useState('');
+  const [department, setDepartment] = useState(''); // New filter for departments
 
-  // Get unique graduation years from alumniData
+  // Get unique graduation years, specialties, and departments from alumniData
   const graduationYears = [...new Set(alumniData.map(alumni => alumni.graduationYear))];
+  const specialties = [...new Set(alumniData.map(alumni => alumni.specialty))];
+  const departments = [...new Set(alumniData.map(alumni => alumni.department))]; // Assuming department exists
 
   const filteredAlumni = alumniData.filter(alumni => {
     return (
       (searchTerm === '' || alumni.name.toLowerCase().includes(searchTerm.toLowerCase())) &&
       (graduationYear === '' || alumni.graduationYear.toString() === graduationYear) &&
       (location === '' || alumni.location.toLowerCase() === location.toLowerCase()) &&
-      (profession === '' || alumni.profession.toLowerCase() === profession.toLowerCase())
+      (profession === '' || alumni.profession.toLowerCase() === profession.toLowerCase()) &&
+      (specialty === '' || alumni.specialty.toLowerCase() === specialty.toLowerCase()) &&
+      (department === '' || alumni.department.toLowerCase() === department.toLowerCase()) // New filter
     );
   });
 
@@ -47,8 +54,20 @@ const AlumniDirectory = () => {
           placeholder="Profession"
           value={profession}
           onChange={(e) => setProfession(e.target.value)}
-          className="border p-2 rounded"
+          className="border p-2 rounded mr-2"
         />
+        <select value={specialty} onChange={(e) => setSpecialty(e.target.value)} className="border p-2 rounded mr-2">
+          <option value="">Select Specialty</option>
+          {specialties.map(spec => (
+            <option key={spec} value={spec}>{spec}</option>
+          ))}
+        </select>
+        <select value={department} onChange={(e) => setDepartment(e.target.value)} className="border p-2 rounded">
+          <option value="">Select Department</option>
+          {departments.map(dep => (
+            <option key={dep} value={dep}>{dep}</option>
+          ))}
+        </select>
       </div>
 
       <div>
@@ -59,6 +78,8 @@ const AlumniDirectory = () => {
               <p><strong>Graduation Year:</strong> {alumni.graduationYear}</p>
               <p><strong>Location:</strong> {alumni.location}</p>
               <p><strong>Profession:</strong> {alumni.profession}</p>
+              <p><strong>Specialty:</strong> {alumni.specialty}</p>
+              <p><strong>Department:</strong> {alumni.department}</p> {/* Display department */}
               <button 
                 className="mt-2 text-blue-600 underline" 
                 onClick={() => alert(`Bio: ${alumni.bio}\nContact: ${alumni.contact}\nLinkedIn: ${alumni.socialLinks.linkedin}\nTwitter: ${alumni.socialLinks.twitter}`)}
@@ -76,3 +97,4 @@ const AlumniDirectory = () => {
 };
 
 export default AlumniDirectory;
+

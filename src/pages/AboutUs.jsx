@@ -35,13 +35,13 @@ const AboutUs = () => {
         <h2 className="text-2xl font-semibold mb-4">Leadership and Board Members</h2>
         <ul className="list-disc pl-5 text-gray-700">
           <li>
-            <strong>Dr. John Doe</strong> - President
+            <strong>Mr. Elias Dejene</strong> - President
           </li>
           <li>
-            <strong>Jane Smith</strong> - Vice President
+            <strong>Elias Dejene</strong> - Vice President
           </li>
           <li>
-            <strong>Michael Brown</strong> - Secretary
+            <strong>Elias Dejene</strong> - Secretary
           </li>
           <li>
             <strong>Emily White</strong> - Treasurer
@@ -54,11 +54,11 @@ const AboutUs = () => {
         <h2 className="text-2xl font-semibold mb-4">Testimonials</h2>
         <div className="bg-gray-100 p-4 rounded shadow mb-4">
           <p className="italic">"The alumni association has been instrumental in helping me network and find job opportunities!"</p>
-          <p className="font-semibold">— Alice Johnson</p>
+          <p className="font-semibold">— Elias Dejene</p>
         </div>
         <div className="bg-gray-100 p-4 rounded shadow mb-4">
           <p className="italic">"I have made lifelong friends and connections through the alumni events." </p>
-          <p className="font-semibold">— Bob Smith</p>
+          <p className="font-semibold">— Elias Dejene</p>
         </div>
         {/* Add more testimonials as needed */}
       </section>

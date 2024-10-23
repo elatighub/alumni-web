@@ -22,7 +22,7 @@ function App() {
           <Route path="/alumni" element={<AlumniDirectory />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<ContactUs />} />
-          <Route path="/news-updates" element={<NewsUpdates />} /> {/* Add the new route */}
+          <Route path="/news-updates" element={<NewsUpdates />} /> 
         </Routes>
       </div>
       <Footer />
