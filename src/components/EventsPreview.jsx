@@ -1,7 +1,7 @@
-// src/pages/LimitedEventsPage.js
 import React from 'react';
 
-const Events = () => {
+const EventsPreview = () => {
+
   // Sample data for events (replace with real data or fetch from an API)
   const events = [
     {
@@ -46,4 +46,6 @@ const Events = () => {
   );
 };
 
-export default Events;
+
+
+export default EventsPreview;

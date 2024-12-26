@@ -1,6 +1,8 @@
 
 
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -63,12 +65,20 @@ const ContactUs = () => {
       </form>
 
       <section className="mt-8">
-        <h2 className="text-2xl font-bold">Follow Us</h2>
-        <ul className="mt-2 space-y-2">
-          <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-500">Facebook</a></li>
-          <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-500">Twitter</a></li>
-          <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-blue-500">Instagram</a></li>
-          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-500">LinkedIn</a></li>
+        <h2 className="text-2xl m-2 font-bold">Follow Us</h2>
+        <ul className="flex items-center w-3/4">
+          {[faFacebookF, faTwitter, faInstagram, faLinkedinIn].map((icon, index) => (
+            <li key={index}>
+              <a
+                href={`https://${icon.iconName}.com`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white px-6 py-2 m-6 rounded-3xl hover:bg-blue-800 bg-blue-600"
+              >
+                <FontAwesomeIcon icon={icon} />
+              </a>
+            </li>
+          ))}
         </ul>
       </section>
 
