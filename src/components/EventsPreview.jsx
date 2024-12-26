@@ -37,7 +37,7 @@ const EventsPreview = () => {
               className="mt-4 bg-gray-300 text-blue-800 py-2 px-4 rounded-md cursor-not-allowed"
               disabled
             >
-              Log in to RSVP
+              Loginto RSVP 
             </button>
           </div>
         ))}

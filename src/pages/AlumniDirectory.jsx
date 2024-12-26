@@ -8,7 +8,7 @@ const alumniData = [
     department: 'Logistics',
     yearsOfService: 5,
     currentRole: 'Supply Chain Manager',
-    imageUrl: '/path-to-image/john.jpg',
+    imageUrl: 'debele.jpg',
   },
   {
     id: 2,
@@ -16,10 +16,16 @@ const alumniData = [
     department: 'Customs',
     yearsOfService: 10,
     currentRole: 'Customs Compliance Officer',
-    imageUrl: '/path-to-image/jane.jpg',
+    imageUrl: 'debele.jpg',
   },
   // Add more alumni as needed
 ];
+// useEffect(() => {
+//   // Fetch alumni data from the backend API
+//   axios.get('/api/alumni')
+//     .then(response => setAlumni(response.data))
+//     .catch(error => console.error('Error fetching alumni:', error));
+// }, []); // Empty dependency array ensures this runs once on component mount
 
 const AlumniDirectory = () => {
   const [search, setSearch] = useState('');

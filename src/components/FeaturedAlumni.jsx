@@ -4,19 +4,19 @@ import React from 'react';
 const alumniData = [
   {
     id: 1,
-    name: "Robel Tesfahe",
+    name: "Mr.X",
     description: "Senior Customs Officer, known for her leadership in modernizing processes.",
     image: "/path-to-image1.jpg", // replace with actual path to image
   },
   {
     id: 2,
-    name: "Chala Geta",
+    name: "Mr.Y",
     description: "A pioneer in digital customs solutions, helping ECC embrace new technology.",
     image: "/path-to-image2.jpg",
   },
   {
     id: 3,
-    name: "Elias Dejene",
+    name: "Mr.Z",
     description: "Led major initiatives in ECC’s international trade relationships.",
     image: "/path-to-image3.jpg",
   },

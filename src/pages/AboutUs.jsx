@@ -12,12 +12,11 @@ const AboutUs = () => {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold">Mission and Vision</h2>
         <p className="mt-2 text-gray-500">
-          Our mission is to foster lifelong relationships among alumni and provide opportunities
-          for networking, personal growth, and community engagement. We envision a thriving alumni
-          community that supports each other and contributes positively to society.
+        Our mission is to connect, support, and grow the network of former members of the Ethiopia Customs Commission.
         </p>
+        <p className="text-gray-600">Through this network, we aim to foster ongoing professional relationships and encourage knowledge sharing among our alumni community.</p>
       </section>
-
+    
       {/* History of the Alumni Association */}
       <section className="mb-8">
         <h2 className="text-2xl font-semibold">History of the Alumni Association</h2>
