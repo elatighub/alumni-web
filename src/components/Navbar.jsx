@@ -16,9 +16,9 @@ const publicNav = [
   { path: "/news", label: "News" },
   { path: "/resources", label: "Resources" },
   { path: "/alumni", label: "Alumni Directory" },
-  { path: "/alumnip", label: "Alumni Profile" },
+  // { path: "/alumnip", label: "Alumni Profile" },
   { path: "/events", label: "Events" },
-  { path: "/job", label: "Job Board" },
+  // { path: "/job", label: "Job Board" },
 ];
 
 const MobileNavbar = ({ isOpen, handleLinkClick }) => (
@@ -81,9 +81,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           ))}
         </ul>
 
-        {/* Search Section */}
+        {/* Search Section
         <div className="flex-grow mx-2">
-          {/* Search Bar - Visible on Large Screens */}
+          {/* Search Bar - Visible on Large Screens 
           <div className={`hidden md:flex items-center ${isSearchVisible ? 'block' : 'hidden'}`}>
             <input
               type="text"
@@ -101,7 +101,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             </button>
           </div>
 
-          {/* Search Icon - Visible on Small Screens */}
+           Search Icon - Visible on Small Screens 
           <button
             className="block md:hidden p-2 text-white"
             aria-label="Search"
@@ -109,7 +109,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           >
             <FontAwesomeIcon icon={faSearch} />
           </button>
-        </div>
+        </div> */}
 
         {/* Dark Mode Toggle */}
         <button

@@ -39,7 +39,7 @@ function App() {
    */}
             {/* Formerly Protected Routes (Now Public) */}
             <Route path="/events" element={<Events />} />
-            <Route path="/alumni-directory" element={<AlumniDirectory />} />
+            <Route path="/alumni" element={<AlumniDirectory />} />
             <Route path="/get-involved" element={<GetInvolved />} />
             <Route path="/job-board" element={<JobBoard />} />
             <Route path="/alumni-profile" element={<AlumniProfile />} />
