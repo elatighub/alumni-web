@@ -1,17 +1,17 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import FeaturedAlumni from '../components/FeaturedAlumni';
+import AlumniOverview from '../components/AlumniOverview';
 import EventsPreview from '../components/EventsPreview';
-import NewsAndResourcesPreview from '../components/NewsAndResourcesPreview';
+import News from '../components/News';
 import JoinUs from '../components/Jionus';
 
   const Home = () => {
     return (
       <div>
         <Hero />
-        <FeaturedAlumni />
+        <News/>
+        <AlumniOverview />
         <EventsPreview />
-      <NewsAndResourcesPreview />
         <JoinUs />
       </div>
     );
