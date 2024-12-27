@@ -16,6 +16,7 @@ const publicNav = [
   { path: "/news", label: "News" },
   { path: "/resources", label: "Resources" },
   { path: "/alumni", label: "Alumni Directory" },
+  { path: "/login", label: "Login"},
   // { path: "/alumnip", label: "Alumni Profile" },
   { path: "/events", label: "Events" },
   // { path: "/job", label: "Job Board" },
