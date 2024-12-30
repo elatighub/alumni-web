@@ -14,11 +14,12 @@ const publicNav = [
   { path: "/about", label: "About" },
   { path: "/contact", label: "Contact" },
   { path: "/news", label: "News" },
-  { path: "/resources", label: "Resources" },
+  // { path: "/resources", label: "Resources" },
   { path: "/alumni", label: "Alumni Directory" },
-  { path: "/login", label: "Login"},
+  
   // { path: "/alumnip", label: "Alumni Profile" },
   { path: "/events", label: "Events" },
+  { path: "/login", label: "Login"},
   // { path: "/job", label: "Job Board" },
 ];
 

@@ -2,8 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import useDarkMode from './hooks/useDarkMode';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Login from './components/Login';
 // import Profile from './components/auth/Profile';
-// import SignIn from './components/auth/SignIn';
+// import SignIn from './componen ts/auth/SignIn';
 // import SignUp from './components/auth/SignUp';
 // Page Imports
 import Home from './pages/Home';
@@ -34,9 +35,9 @@ function App() {
             <Route path="/resources" element={<Resources />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/news" element={<News />} />
-            {/* <Route path="/signin" element={<SignIn />} />
-            <Route path="/signup" element={<SignUp />} />
-   */}
+            <Route path="/Login" element={<Login />} />
+            {/* <Route path="/signup" element={<SignUp />} /> */}
+   
             {/* Formerly Protected Routes (Now Public) */}
             <Route path="/events" element={<Events />} />
             <Route path="/alumni" element={<AlumniDirectory />} />

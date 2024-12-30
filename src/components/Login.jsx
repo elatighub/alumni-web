@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Login = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -9,12 +9,26 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Handle login logic here
     console.log("Logging in...");
+    // Add your login logic here (API call, etc.)
+    setIsDropdownOpen(false); // Close the dropdown after login attempt
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (event.target.closest(".dropdown") === null) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="relative">
+    <div className="relative dropdown">
       {/* Login Button */}
       <button
         onClick={toggleDropdown}
