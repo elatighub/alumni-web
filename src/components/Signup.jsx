@@ -15,7 +15,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="absolute right-0 mt-40 bg-white shadow-lg rounded-md p-4 w-80 z-10">
+    <div className="absolute right-0 mt-96 bg-white shadow-lg rounded-md p-4 w-80 z-10">
       <h3 className="text-lg font-semibold text-gray-800 mb-4">Create Your Account</h3>
       <form onSubmit={handleSignup}>
         <div className="mb-4">
