@@ -3,10 +3,11 @@ import useDarkMode from './hooks/useDarkMode';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Login from './components/Login';
+import Signup from './components/Signup';
+
 // import Profile from './components/auth/Profile';
 // import SignIn from './componen ts/auth/SignIn';
-// import SignUp from './components/auth/SignUp';
-// Page Imports
+ 
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Resources from './pages/Resources';
@@ -36,7 +37,7 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/news" element={<News />} />
             <Route path="/Login" element={<Login />} />
-            {/* <Route path="/signup" element={<SignUp />} /> */}
+            <Route path="/Signup" element={<Signup/>} />
    
             {/* Formerly Protected Routes (Now Public) */}
             <Route path="/events" element={<Events />} />
